@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Add SkiMan</title>
+</h:head>
+<h:body>
+--skiMan--
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="firstName" />
+			<h:inputText value="#{addUserBean.firstName}" />
+			<h:outputLabel value="lastName" />
+			<h:inputText value="#{addUserBean.lastName}" />
+			<h:outputLabel value="cin" />
+			<h:inputText value="#{addUserBean.cin}" />
+			<h:outputLabel value="email" />
+			<h:inputText value="#{addUserBean.email}" />
+			<h:outputLabel value="phone" />
+			<h:inputText value="#{addUserBean.phone}" />
+			<h:outputLabel value="adress" />
+			<h:inputText value="#{addUserBean.adress}" />
+			<h:outputLabel value="registrationNumber" />
+			<h:inputText value="#{addUserBean.registrationNumber}" />
+			<h:outputLabel value="profilePicture" />
+			<h:inputText value="#{addUserBean.profilePicture}" />
+			<h:outputLabel value="login" />
+			<h:inputText value="#{addUserBean.login}" />
+			<h:outputLabel value="password" />
+			<h:inputText value="#{addUserBean.passWord}" />
+			<h:commandButton action="#{addUserBean.AddSkimen()}" value="Add" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

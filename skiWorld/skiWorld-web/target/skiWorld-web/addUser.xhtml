@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+	<h:head>
+		<title>Default title</title>
+	</h:head>
+	<h:body>
+	<h:form>
+		<h:selectOneMenu value="#{addChoiceBean.choice}">
+		<f:selectItem itemValue="ski" itemLabel="SkiMan" />
+			<f:selectItem itemValue="resto" itemLabel="Reastaurant manager" />
+			<f:selectItem itemValue="event" itemLabel="Holder event" />
+			<f:selectItem itemValue="inst" itemLabel="Instructor" />
+		</h:selectOneMenu>
+		<h:commandButton action="#{addChoiceBean.redirect()}" value="confirm" />
+		</h:form>
+	</h:body>
+</html>

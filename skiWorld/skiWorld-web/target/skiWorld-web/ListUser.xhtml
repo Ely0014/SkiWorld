@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>List User</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:dataTable value="#{listUserBean.users}" var="Users" border="2">
+			<h:column>
+				<f:facet name="header">Status</f:facet>
+                <h:outputLabel value="#{listUserBean.status}" />
+			</h:column>
+			<h:column>
+				<f:facet name="header">first name</f:facet>
+				<h:outputLabel value="#{Users.firstName}" />
+			</h:column>
+			<h:column>
+				<f:facet name="header">last name</f:facet>
+				<h:outputLabel value="#{Users.lastName}" />
+			</h:column>
+			<h:column>
+				<f:facet name="header">phone</f:facet>
+				<h:outputLabel value="#{Users.phone}" />
+			</h:column>
+		</h:dataTable>
+	</h:form>
+</h:body>
+</html>
